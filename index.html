@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
   
   <title>Frontend Mentor | Advice generator app</title>
 
@@ -15,14 +17,23 @@
   </style>
 </head>
 <body>
-
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
+  <main>
+  <!-- Advice ID goes here -->
+    <h4>Advice # <span id="advice-id"></span></h4>
+    <!-- Advice text goes here -->
+    <p id="advice-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maxime sed impedit laudantium ullam unde!
+    </p>
+    
+    <img src="./images/pattern-divider-desktop.svg" alt="divider-icon" class="divider">
+    <div class="dice">
+      <img src="./images/icon-dice.svg" alt="">
+    </div>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">SwitchTega</a>.
   </div>
 </body>
 </html>

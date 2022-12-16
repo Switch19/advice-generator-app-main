@@ -1,6 +1,6 @@
-const quoteP = document.querySelector("#advice-text")
-const imgButton = document.querySelector(".dice")
-const adviceId = document.getElementById("advice-id")
+const quoteP = document.querySelector("#advice-text");
+const imgButton = document.querySelector(".dice");
+const adviceId = document.getElementById("advice-id");
 
 const fetchAdvice = async () => {
     try {
@@ -15,8 +15,8 @@ const renderAdvice = (adviceData) => {
     quoteP.textContent = `"${adviceData.slip.advice}"`
     adviceId.textContent = adviceData.slip.id
 }
-imgButton.addEventListener("click", fetchAdvice)
 document.body.onload = fetchAdvice;
+imgButton.addEventListener("click", fetchAdvice)
 // fetch('https://api.adviceslip.com/advice').then((data)=> {
 //     // console.log(data)
 //     return data.json();
